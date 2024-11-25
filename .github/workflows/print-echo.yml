@@ -18,7 +18,7 @@ jobs:
 
       - name: Print "hi"
         run: |
-          echo "MY_NAME:${{ vars.NAME }}" >> $GITHUB_ENV
-          echo "NAME=$MY_NAME"
+          echo "Hi my name is ${{ vars.NAME }}"
+          
   
 
