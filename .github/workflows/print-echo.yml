@@ -17,5 +17,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Print "hi"
-        run: echo "hi ${{ secrets.NAME }}"
+        run: |
+          echo "MY_NAME:${{ secrets.NAME }}" >> $GITHUB_ENV
+          echo "NAME=$MY_NAME"
 
